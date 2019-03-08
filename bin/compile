@@ -28,7 +28,7 @@ if [ ! -e "$ROOT/conda_runtime.txt" ]; then
 else
 	MINICONDA_FILE=$(cat "$ROOT/conda_runtime.txt")
 fi
-MINICONDA_URI="https://repo.anaconda.com/archive/$MINICONDA_FILE"
+MINICONDA_URI="http://repo.continuum.io/miniconda/$MINICONDA_FILE"
 MINICONDA_CACHE="$CACHE/$MINICONDA_FILE"
 
 echo "-----> Preparing Python Environment..."
