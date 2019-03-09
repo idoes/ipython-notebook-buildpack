@@ -20,7 +20,3 @@ then
 fi
 
 echo "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
-echo "
-default_process_types:
-  web: /home/vcap/app/.conda/bin/ipython notebook --no-browser --no-mathjax --ip=* --port \$PORT $with_config
-"
