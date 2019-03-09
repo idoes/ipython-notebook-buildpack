@@ -19,4 +19,7 @@ then
     with_config="--config=./additional_notebook_config.py"
 fi
 
-echo $(pwd)
+echo "
+default_process_types:
+  web: which conda; /home/vcap/app/.conda/bin/ipython notebook --no-browser --no-mathjax --ip=* --port \$PORT $with_config
+"
