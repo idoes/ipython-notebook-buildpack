@@ -19,4 +19,4 @@ then
     with_config="--config=./additional_notebook_config.py"
 fi
 
-echo "AAAAAAAAAAAAAAAAAAAAAAAAAAA"
+echo $(pwd)
