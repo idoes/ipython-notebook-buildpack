@@ -44,6 +44,8 @@ $MINICONDA_CACHE -b -p $CONDA_HOME #&> /dev/null
 echo "-----> Installing Dependencies..."
 $CONDA_BIN/conda install --yes --quiet pip ipython-notebook #&> /dev/null
 $CONDA_BIN/conda create -n myenv python=3 #&> /dev/null
+source activate myenv #&> /dev/null
+pip install ipython-notebook #&> /dev/null
 if [ -e "$ROOT/requirements.txt" ]; then
     echo "-----> Installing additional requirements using conda..."
 	while read p; do 
